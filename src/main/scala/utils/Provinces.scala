@@ -1,0 +1,17 @@
+enum Province(val name: String):
+  override def toString(): String = name
+  case Camaguey extends Province("Camagüey")
+  case CiegoDeAvila extends Province("Ciego de Ávila")
+  case Cienfuegos extends Province("Cienfuegos")
+  case LaHabana extends Province("La Habana")
+  case Granma extends Province("Granma")
+  case Guantanamo extends Province("Guantánamo")
+  case Holguin extends Province("Holguín")
+  case LasTunas extends Province("Tunas")
+  case Matanzas extends Province("Matanzas")
+  case PinarDelRio extends Province("Río")
+  case SanctiSpiritus extends Province("Spiritus")
+  case SantiagoDeCuba extends Province("Cuba")
+  case VillaClara extends Province("Clara")
+  case Mayabeque extends Province("Mayabeque")
+  case Artemisa extends Province("Artemisa")
