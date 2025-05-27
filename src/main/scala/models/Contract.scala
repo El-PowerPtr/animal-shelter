@@ -2,13 +2,16 @@ import java.sql.Date
 import scala.util.matching.Regex
 import scala.util.Failure
 
-trait Contract:
+trait Contract(
+    serviceProvider: ServiceProvider,
+    responsableName: String,
+    conciliationDate: Date,
+    endDate: Date,
+    startDate: Date,
+    description: String,
+    recharge: Double
+):
   def price: Double
-  def serviceProvider: ServiceProvider
-  def responsableName: String
-  def conciliationDate: Date
-  def endDate: Date
-  def startDate: Date
 
 object Contract:
   def validDates(
